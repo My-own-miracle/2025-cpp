@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    int n;
+    int n = 0;
     scanf("%d", &n);
     printf("%lld", (long long int) ((n + 1) / 2) * ((n + 1) / 2));
     return 0;

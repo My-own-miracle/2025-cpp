@@ -2,8 +2,8 @@
 
 int main(int argc, char** argv)
 {
-    int n;
-    int k;
+    int n = 0;
+    int k = 0;
     scanf("%d %d", &n, &k);
     int a = k / n;
     int b = k % n;
