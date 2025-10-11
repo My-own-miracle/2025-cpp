@@ -14,8 +14,7 @@ int main(int argc, char** argv)
         flag = false;
         printf("King\n");
     }
-    if (fabs(stlet - endlet) == fabs(stnum - endnum) or
-            stlet == endlet or stnum == endnum)
+    if (fabs(stlet - endlet) == fabs(stnum - endnum) or stlet == endlet or stnum == endnum)
     {
         flag = false;
         printf("Queen\n");
@@ -37,8 +36,7 @@ int main(int argc, char** argv)
     }
     if (stnum != 1)
     {
-        if (stlet == endlet and (endnum - stnum == 1 or 
-            (endnum - stnum == 2 and stnum == 2)))
+        if (stlet == endlet and (endnum - stnum == 1 or (endnum - stnum == 2 and stnum == 2)))
         {
             flag = false;
             printf("Pawn\n");
