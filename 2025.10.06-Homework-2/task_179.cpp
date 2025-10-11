@@ -1,6 +1,6 @@
 #include <cstdio>
 
-int main(int argc, char **argv)
+int main(int argc, char** argv)
 {
     int a = 0;
     int b = 0;
@@ -65,52 +65,32 @@ int main(int argc, char **argv)
     {
         if (b == 0)
         {
-            if (c > 0)
+            if (c == 1)
             {
-                if (c == 1)
-                {
-                    printf("y");
-                }
-                else
-                {
-                    printf("%dy", c);
-                }
+                printf("y");
             }
-            else if (c < 0)
+            else if (c == -1)
             {
-                if (c == -1)
-                {
-                    printf("-y");
-                }
-                else
-                {
-                    printf("%dy", c);
-                }
+                printf("-y");
+            }
+            else
+            {
+                printf("%dy", c);
             }
         }
         else
         {
-            if (b > 0)
+            if (b == 1)
             {
-                if (b == 1)
-                {
-                    printf("x");
-                }
-                else
-                {
-                    printf("%dx", b);
-                }
+                printf("x");
             }
-            else if (b < 0)
+            else if (b == -1)
             {
-                if (b == -1)
-                {
-                    printf("-x");
-                }
-                else
-                {
-                    printf("%dx", b);
-                }
+                printf("-x");
+            }
+            else
+            {
+                printf("%dx", b);
             }
             if (c > 0)
             {
