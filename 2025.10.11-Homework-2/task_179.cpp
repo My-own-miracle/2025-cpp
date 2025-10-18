@@ -6,7 +6,7 @@ int main(int argc, char** argv)
     int b = 0;
     int c = 0;
     scanf("%d %d %d", &a, &b, &c);
-    if (a == 0 and b == 0 and c == 0)
+    if (a == 0 && b == 0 && c == 0)
     {
         printf("0");
         return 0;
