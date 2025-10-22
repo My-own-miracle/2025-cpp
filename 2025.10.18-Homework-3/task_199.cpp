@@ -5,8 +5,7 @@ int main(int argc, char** argv)
     int a = 0;
     int b = 0;
     scanf("%d %d", &a, &b);
-    int nok = a * b;
-    while (a > 0 and b > 0)
+    while (a > 0 && b > 0)
     {
         if (a < b)
         {
@@ -18,6 +17,6 @@ int main(int argc, char** argv)
         }
     }
     int nod = a + b;
-    printf("%d", nok / nod);
+    printf("%d", a * b / nod);
     return 0;
 }
