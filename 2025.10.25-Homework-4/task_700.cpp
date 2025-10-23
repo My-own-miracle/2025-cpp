@@ -1,16 +1,17 @@
 #include <cstdio>
+#define SIZE 1000
 
 int main(int argc, char** argv)
 {
-    int size = 0;
+    int n = 0;
     int a = 0;
     int b = 0;
     int c = 0;
     int d = 0;
-    scanf("%d %d %d %d %d", &size, &a, &b, &c, &d);
-    int arr[size] = {0};
+    scanf("%d %d %d %d %d", &n, &a, &b, &c, &d);
+    int arr[SIZE] = {0};
     int itm = 0;
-    for (int i = 0; i < size; ++i)
+    for (int i = 0; i < n; ++i)
     {
         arr[i] = i + 1;
     }
@@ -26,7 +27,7 @@ int main(int argc, char** argv)
         arr[c - 1 + i] = arr[d - 1 - i];
         arr[d - 1 - i] = itm;
     }
-    for (int i = 0; i < size; ++i)
+    for (int i = 0; i < n; ++i)
     {
         printf("%d ", arr[i]);
     }
