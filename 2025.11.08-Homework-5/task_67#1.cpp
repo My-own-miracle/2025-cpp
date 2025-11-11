@@ -26,5 +26,6 @@ int main(int argc, char** argv)
     {
         printf("NO");
     }
+    free(arr);
     return 0;
 }

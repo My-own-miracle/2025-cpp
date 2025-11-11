@@ -19,5 +19,6 @@ int main(int argc, char** argv)
         }
     }
     printf("%d", k);
+    free(arr);
     return 0;
 }
