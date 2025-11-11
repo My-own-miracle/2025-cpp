@@ -12,25 +12,16 @@ int main(int argc, char** argv)
 
 double power(double a, int n)
 {
-    double s = 1.0;
-    if (n == 0)
+    if (n % 2 == 1)
     {
-        return s;
+        return a * power(a * a, (n - 1) / 2);
     }
-    else if (n < 0)
+    else if (n == 0)
     {
-        n = -n;
-        for (int i = 0; i < n; ++i)
-        {
-            s /= a;
-        }
+        return 1;
     }
-    else
+    else 
     {
-        for (int i = 0; i < n; ++i)
-        {
-            s *= a;
-        }
+        return power(a * a, n / 2);
     }
-    return s;
 }
