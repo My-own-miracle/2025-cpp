@@ -8,6 +8,7 @@ int main(int argc, char** argv)
     int n = 0;
     scanf("%lf %d", &a, &n);
     printf("%lf", power(a, n));
+    return 0;
 }
 
 double power(double a, int n)

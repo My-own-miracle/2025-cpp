@@ -1,36 +1,31 @@
 #include <cstdio>
+#include <cmath>
 
-double power(double a, int n);
+bool prime(int n);
 
 int main(int argc, char** argv)
 {
-    double a = 0;
     int n = 0;
-    scanf("%lf %d", &a, &n);
-    printf("%lf", power(a, n));
-}
-
-double power(double a, int n)
-{
-    double s = 1.0;
-    if (n == 0)
+    scanf("%d", &n);
+    if (prime(n))
     {
-        return s;
-    }
-    else if (n < 0)
-    {
-        n = -n;
-        for (int i = 0; i < n; ++i)
-        {
-            s /= a;
-        }
+        printf("prime");
     }
     else
     {
-        for (int i = 0; i < n; ++i)
+        printf("composite");
+    }
+    return 0;
+}
+
+bool prime(int n)
+{
+    for (int i = 2; i < sqrt(n) + 1; ++i)
+    {
+        if (n % i == 0 and i != n)
         {
-            s *= a;
+            return false;
         }
     }
-    return s;
+    return true;
 }

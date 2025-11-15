@@ -8,6 +8,7 @@ int main(int argc, char** argv)
     int k = 0;
     scanf("%d %d", &n, &k);
     printf("%d", binom(n, k));
+    return 0;
 }
 
 int binom(int n, int k)
