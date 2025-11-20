@@ -1,0 +1,33 @@
+#include <cstdio>
+#include <string.h>
+#include <cstdlib>
+
+void Palindrom(char* str);
+
+int main(int argc, char** argv)
+{
+    char* str = (char*)calloc(1000, sizeof(char));
+    scanf("%s", str);
+    Palindrom(str);
+    free(str);
+    return 0;
+}
+
+void Palindrom(char* str)
+{
+    int len = 0;
+    while (str[len] != '\0')
+    {
+        len += 1;
+    }
+    for (int i = 0; i < len; ++i)
+    {
+        if (str[i] != str[len - 1 - i])
+        {
+            printf("no");
+            return;
+        }
+    }
+    printf("yes");
+    return;
+}
