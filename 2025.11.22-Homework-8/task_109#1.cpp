@@ -6,8 +6,8 @@ void ReLetter(char* str);
 
 int main(int argc, char** argv)
 {
-    char* str = (char*)calloc(1000, sizeof(char));
-    scanf("%s", str);
+    char* str = (char*)calloc(100, sizeof(char));
+    scanf("%99s", str);
     ReLetter(str);
     free(str);
     return 0;

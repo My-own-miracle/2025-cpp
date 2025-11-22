@@ -6,8 +6,8 @@ void LenWord(char* str);
 
 int main(int argc, char** argv)
 {
-    char* str = (char*)calloc(1000, sizeof(char));
-    scanf("%[^\n]", str);
+    char* str = (char*)calloc(100, sizeof(char));
+    scanf("%99[^\n]", str);
     LenWord(str);
     free(str);
     return 0;
